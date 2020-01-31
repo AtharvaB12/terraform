@@ -1,5 +1,5 @@
-resource "aws_iam_role_policy" "test_policy" {
-  name = "test_policy"
+resource "aws_iam_role_policy" "s3_policy" {
+  name = "s3_policy"
   role = "${aws_iam_role.test_role.id}"
 
   policy = <<EOF
