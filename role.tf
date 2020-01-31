@@ -1,5 +1,5 @@
 resource "aws_iam_role" "test_role" {
-  name = "s3_role1"
+  name = "ec2_role1"
 
     assume_role_policy = <<EOF
 {
