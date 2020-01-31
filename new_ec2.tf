@@ -1,7 +1,7 @@
 provider "aws" {
 	region = "us-east-1"
 }
-resource "aws_instance" "myos_new" {
+resource "aws_instance" "new_os" {
 	ami = "ami-09d069a04349dc3cb"
 	instance_type = "t2.micro"
         iam_instance_profile = "${aws_iam_instance_profile.test_profile.name}"
@@ -10,7 +10,7 @@ resource "aws_instance" "myos_new" {
         volume_size = "10"
 }
 	tags = {
-	 Name = "atharva_role"
+	 Name = "new_aws_instance"
 }
 	key_name = "aws_key"
 }
